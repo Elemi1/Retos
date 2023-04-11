@@ -24,18 +24,19 @@ public class Retos_mouredev {
         for (int i = 1; i < 101; i++) {
             num1= i;
           
-            
-            if (num1%3==0 ) {
+            if (num1 % 3 == 0 && num1 % 5 == 0) {
                 System.out.println("fizzbuzz");
-            }else{
+            }
+            else if (num1 % 3 == 0) {
+                System.out.println("fizz");
+            }
+            else if (num1 % 5 == 0) {
+                System.out.println("buzz");
+            }
+            else{
                 System.out.println(num1);
             }
-            /*else if (num1 % 5 == 0){
-                System.out.println("buzz");
-            }else if (num1%3==0 ){
-                System.out.println("fizz ");
-            }
-            */
+            
            
         }
         
